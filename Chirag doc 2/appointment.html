@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellSpring Family Clinic - Request Appointment</title>
+    <meta name="description" content="Form to request an appointment with WellSpring Family Clinic.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+ <li><a href="bmi.html">BMI Calculator</a></li>
+ <li><a href="appointment.html">Appointment</a></li>
+   <li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+ <section id="appointment-request" class="fade-element">
+  <h2>Request an Appointment</h2>
+  <p>Please fill out the details below.</p>
+<form id="appointmentForm" action="#" method="POST">
+                
+<label for="appt-name">Your Full Name:</label>
+    <input type="text" id="appt-name" name="name" required>
+      <br>
+<label for="appt-email">Email Address:</label>
+       <input type="email" id="appt-email" name="email" required>
+      <br>
+
+     <label for="appt-phone">Phone Number:</label>
+      <input type="tel" id="appt-phone" name="phone">
+                <br>
+                
+    <label for="appt-date">Preferred Date:</label>
+    <input type="date" id="appt-date" name="preferred_date" required>
+                <br>
+<label for="appt-message">Message/Reason for Appointment:</label>
+         <textarea id="appt-message" name="message" rows="4"></textarea>
+     <br>
+
+    <button type="submit">Submit Request</button>
+    </form>
+
+   <p id="appointment-status" style="margin-top: 20px; color: green; font-weight: bold;"></p>
+
+  </section>
+    </main>
+
+    <footer>
+        <p> 2025 WellSpring Family Clinic.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
